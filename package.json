@@ -1,0 +1,19 @@
+{
+  "name": "mykitchen",
+  "version": "1.0.0",
+  "description": "@Author Sidharth Surendran",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/94sidharth/hackathon_myKitchen.git"
+  },
+  "author": "Sidharth Surendran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/94sidharth/hackathon_myKitchen/issues"
+  },
+  "homepage": "https://github.com/94sidharth/hackathon_myKitchen#readme"
+}
