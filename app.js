@@ -20,3 +20,4 @@ myApp.controller('homeController', ['$scope', function ($scope) {
 }]);
 
 console.log("Test git")
+console.log("Test git")
