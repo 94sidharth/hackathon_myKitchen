@@ -12,3 +12,5 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
 myApp.controller('homeController', [function () {
     console.log("inside controller")
 }]);
+
+console.log("conflict");
