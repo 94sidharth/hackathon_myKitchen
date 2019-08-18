@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ngRoute', 'ngResource']);
+var myApp = angular.module('myApp', ['ngRoute', 'ngResource', 'infinite-scroll']);
 
 myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
@@ -9,8 +9,16 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
         })
 }]);
 
-myApp.controller('homeController', [function () {
-    console.log("inside controller")
+myApp.controller('homeController', ['$scope', function ($scope) {
+    $scope.tilenumber = [1, 2, 3, 4];
+    $scope.paginationFunction = function () {
+        var last = $scope.tilenumber[$scope.tilenumber.length - 1];
+        for (var i = 1; i <= 4; i++) {
+            $scope.tilenumber.push(last + i);
+        }
+    }
 }]);
 
+console.log("Test git")
+console.log("Test git")
 console.log("conflict");

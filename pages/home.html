@@ -1,1 +1,18 @@
-<h3>This is home page</h3>
+<div class="container">
+    <div class="row addPosition">
+        <h4>Bakery Delights</h4>
+        <div class="col-sm-3" ng-repeat="num in tilenumber">
+            <div class="tilesClass">
+                <img src="/assets/images/sandwich.jpeg" class="imageClass">
+                <i class="fa fa-heart-o wishlistIcon"></i>
+                <div class="infoDiv">
+                    <p>Chicken Sandwich</p>
+                    <h6>10 ingredients required</h6>
+                </div>
+                <button class="viewButtonClass">View</button>
+            </div>
+        </div>
+        <i class="fa fa-angle-double-right rightIcon" ng-click="paginationFunction()"></i>
+
+    </div>
+</div>
